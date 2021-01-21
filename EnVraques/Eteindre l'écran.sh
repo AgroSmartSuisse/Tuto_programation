@@ -9,3 +9,4 @@
 #
 # Sur Linux, une commande existe pour éteindre l'écran. Il se rallumera après un mouvement de la souris:
 sleep 1; xset dpms force off
+
