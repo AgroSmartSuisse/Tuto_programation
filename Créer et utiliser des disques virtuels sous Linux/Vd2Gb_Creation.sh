@@ -9,14 +9,8 @@
 
 #date --date="+%m/%d/%y"
 date "+%m %d %H %M %Y.%S" > tmp
-print "denis pasquier" >> tmp
-
-
-
-
-
-
-
+echo "denis pasquier" >> tmp
+cat tmp
 
 
 
