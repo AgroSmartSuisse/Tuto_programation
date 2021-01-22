@@ -17,6 +17,7 @@ nf="tmp.txt" # nom du fichier info
 
 
 
+=========
 date "+%m %d %H %M %Y.%S" > ${nf}
 echo Bonjour Denis Pasquier | sed -e "s/Denis Pasquier/pade/">> ${nf}
 echo "Denis Pasquier" >> ${nf}
