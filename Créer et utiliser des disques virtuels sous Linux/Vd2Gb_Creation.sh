@@ -1,20 +1,18 @@
 #
-# Copyright (c) Denis Pasquier 2021 -  1 -  20
+# Copyright (c) Denis Pasquier 2021 -  1 -  26
 #
-
 # date +%m/%d/%y format de la date
-
-
 #maintenant = date(+%m/%d/%y) ; echo ${#maintenant}
 
-# construction et affichage du fichier texte d'acceuil tmp.txt
 
 #date --date="+%m/%d/%y"
 
-nf="tmp.txt" # nom du fichier info
+# nf="tmp.txt" # nom du fichier info
+qui="Denis Pasquier"
 
 
-date "+%m %d %H %M %Y.%S" > ${nf}
-echo Bonjour Denis Pasquier | sed -e "s/Denis Pasquier/pade/">> ${nf}
-echo "Denis Pasquier" >> ${nf}
-cat ${nf}
+date "+Nous sommes le %A %d %B %Y, il est %H heurs %M minutes et %S secondes"
+echo ${qui} 'Vous souhaite la bien venue'
+echo Création d"'"un disque virtuel, marche à suivre
+echo Source video  de la chaine youtube '"'Adrien Linuxtricks'"' 'https://www.youtube.com/watch?v=GH_6pMvmKe0'
+# cat ${nf}
