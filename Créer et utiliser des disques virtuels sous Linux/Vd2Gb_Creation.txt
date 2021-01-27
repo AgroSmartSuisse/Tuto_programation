@@ -1,0 +1,19 @@
+#
+# Copyright (c) Denis Pasquier 2021 -  1 -  26
+#
+
+
+--------------------------------------------------------------------
+(base) pade@pade-Latitude-E6530:~$ sudo -i
+
+root@pade-Latitude-E6530:~# cd /
+
+root@pade-Latitude-E6530:/# cd /dev
+
+root@pade-Latitude-E6530:/dev# mkdir virtualdisk
+
+root@pade-Latitude-E6530:/dev# cd virtualdisk
+
+root@pade-Latitude-E6530:/dev/virtualdisk# dd if=/dev/zero of=/dev/virtualdisk/vd2G1 bs=1M count=2000
+
+root@pade-Latitude-E6530:/dev/virtualdisk#
