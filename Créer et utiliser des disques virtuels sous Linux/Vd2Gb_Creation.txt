@@ -8,12 +8,18 @@
 
 root@pade-Latitude-E6530:~# cd /
 
-root@pade-Latitude-E6530:/# cd /dev
+root@pade-Latitude-E6530:/# mkdir /dev/virtualdisk
 
-root@pade-Latitude-E6530:/dev# mkdir virtualdisk
+root@pade-Latitude-E6530:/# dd /dev/virtualdisk# dd if=/dev/zero of=/dev/virtualdisk/vd2G1 bs=1M count=2000
 
-root@pade-Latitude-E6530:/dev# cd virtualdisk
+root@pade-Latitude-E6530:/# mkfs.ext4 /dev/virtualdisk/vd2G01
 
-root@pade-Latitude-E6530:/dev/virtualdisk# dd if=/dev/zero of=/dev/virtualdisk/vd2G1 bs=1M count=2000
 
-root@pade-Latitude-E6530:/dev/virtualdisk#
+
+
+root@pade-Latitude-E6530:/# mkdir mnt
+
+root@pade-Latitude-E6530:/# mkdir mnt/vd2G01
+
+root@pade-Latitude-E6530:/# mount -o loop /dev/virtualdisk/vd2G01 /mnt/vd2G01
+
